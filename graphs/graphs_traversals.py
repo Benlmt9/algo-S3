@@ -55,7 +55,7 @@ def BFS_forest(G):
     p = [None] * G.order
     for s in range(G.order):
         if p[s] is None:
-            __BFS(G, s, p)
+            __BFS_forest(G, s, p)
     return p    # represents the spanning forest
     
     
